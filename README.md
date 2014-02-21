@@ -12,6 +12,7 @@ export OPEN_TREE_ROOT="${HOME}/Documents/projects/ot"
 source "${OPEN_TREE_ROOT}/env/bin/activate"
 export PATH="${PATH}:${OPEN_TREE_ROOT}/bin"
 export GITHUB_OAUTH_TOKEN="YOUR GITHUB_OAUTH_TOKEN goes here!"
+alias debug-logging="source ${OPEN_TREE_ROOT}/bin/debug-level-logging.sh && restart-web2py"
 </code>
 
 Where you get your oath key via curl with something like:
