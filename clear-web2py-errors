@@ -1,0 +1,3 @@
+#!/bin/sh
+rm "${OPEN_TREE_ROOT}/api.opentreeoflife.org/errors/"*
+rm "${OPEN_TREE_ROOT}/opentree/curator/errors/"*
