@@ -13,7 +13,7 @@ source "${OPEN_TREE_ROOT}/env/bin/activate"
 export PATH="${PATH}:${OPEN_TREE_ROOT}/bin"
 export GITHUB_OAUTH_TOKEN="YOUR GITHUB_OAUTH_TOKEN goes here!"
 alias debug-logging="source ${OPEN_TREE_ROOT}/bin/debug-level-logging.sh && restart-web2py"
-
+alias normal-logging="source ${OPEN_TREE_ROOT}/bin/normal-level-logging.sh && restart-web2py"
 # Some paths as env vars to make it easier to jump around...
 export API_ROOT="${OPEN_TREE_ROOT}/api.opentreeoflife.org"
 export CURATOR_ROOT="${OPEN_TREE_ROOT}/opentree/curator"
