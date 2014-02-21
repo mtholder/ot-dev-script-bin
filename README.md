@@ -13,6 +13,14 @@ source "${OPEN_TREE_ROOT}/env/bin/activate"
 export PATH="${PATH}:${OPEN_TREE_ROOT}/bin"
 export GITHUB_OAUTH_TOKEN="YOUR GITHUB_OAUTH_TOKEN goes here!"
 alias debug-logging="source ${OPEN_TREE_ROOT}/bin/debug-level-logging.sh && restart-web2py"
+
+# Some paths as env vars to make it easier to jump around...
+export API_ROOT="${OPEN_TREE_ROOT}/api.opentreeoflife.org"
+export CURATOR_ROOT="${OPEN_TREE_ROOT}/opentree/curator"
+export DEV_SCRIPT_ROOT="${OPEN_TREE_ROOT}/bin"
+export PEYOTL_ROOT="${OPEN_TREE_ROOT}/peyotl"
+export PHYLESYSTEM_ROOT="${OPEN_TREE_ROOT}/phylesystem"
+export PHYLESYSTEM_TEST_ROOT="${OPEN_TREE_ROOT}/phylesystem_test"
 </code>
 
 Where you get your oath key via curl with something like:
