@@ -39,7 +39,7 @@ For example the following gits you a fair way toward having an installation
 of the api and curator apps (see the readmes in those repos and opentree/deploy
 for the real docs on installation procedures)
 
-<code>
+<pre>
 source ~/ot-dev-env.sh
 cd "$OPEN_TREE_ROOT"
 git clone https://github.com/web2py/web2py.git
@@ -51,4 +51,4 @@ ln -s "../../opentree/curator" web2py/applications/curator
 cp api.opentreeoflife.org/private/config.example api.opentreeoflife.org/private/config
 cp opentree/curator/private/config.example opentree/curator/private/config
 cp opentree/webapp/routes.py web2py/routes.py
-</code>
+</pre>
