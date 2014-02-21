@@ -7,7 +7,7 @@ If you do want to use
 it you need to have something like this is your .bash_profile
 or a shell script that you source:
 
-<code>
+<pre>
 export OPEN_TREE_ROOT="${HOME}/Documents/projects/ot"
 source "${OPEN_TREE_ROOT}/env/bin/activate"
 export PATH="${PATH}:${OPEN_TREE_ROOT}/bin"
@@ -21,7 +21,7 @@ export DEV_SCRIPT_ROOT="${OPEN_TREE_ROOT}/bin"
 export PEYOTL_ROOT="${OPEN_TREE_ROOT}/peyotl"
 export PHYLESYSTEM_ROOT="${OPEN_TREE_ROOT}/phylesystem"
 export PHYLESYSTEM_TEST_ROOT="${OPEN_TREE_ROOT}/phylesystem_test"
-</code>
+</pre>
 
 Where you get your oath key via curl with something like:
 
