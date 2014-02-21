@@ -1,0 +1,17 @@
+#!/bin/sh
+if test -z ${OPEN_TREE_ROOT}
+then
+    echo "OPEN_TREE_ROOT must be in your env to find the web2py dir"
+    exit 1
+fi
+cd "$OPEN_TREE_ROOT/web2py" || exit
+stop-web2py $1 || exit
+set -x 
+if test $(ps auxww | grep python | grep web2py | wc -l) -lt 2
+then
+    python web2py.py --nogui -a '<recycle>' -v >>httpserver-out.txt 2>&1 &
+    echo "Started web2py as $! according to bash"
+else
+    echo web2py processes appear to be running...
+    ps auxww | grep python | grep web2py
+fi
