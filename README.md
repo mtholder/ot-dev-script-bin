@@ -21,6 +21,10 @@ export DEV_SCRIPT_ROOT="${OPEN_TREE_ROOT}/bin"
 export PEYOTL_ROOT="${OPEN_TREE_ROOT}/peyotl"
 export PHYLESYSTEM_ROOT="${OPEN_TREE_ROOT}/phylesystem"
 export PHYLESYSTEM_TEST_ROOT="${OPEN_TREE_ROOT}/phylesystem_test"
+ssh_to_ot () {
+    ssh -i ~/.ssh/opentree/opentree.pem opentree@ot$1
+}
+alias sshot=ssh_to_ot
 </pre>
 
 Where you get your oath key via curl with something like:

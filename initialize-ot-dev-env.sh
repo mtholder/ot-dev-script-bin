@@ -13,4 +13,7 @@ echo 'export CURATOR_ROOT="${OPEN_TREE_ROOT}/opentree/curator"'
 echo 'export PHYLESYSTEM_ROOT="${OPEN_TREE_ROOT}/phylesystem"'
 echo 'export PHYLESYSTEM_TEST_ROOT="${OPEN_TREE_ROOT}/phylesystem_test"'
 echo 'export DEV_SCRIPT_ROOT="${OPEN_TREE_ROOT}/bin"'
-
+echo 'ssh_to_ot () {'
+echo '    ssh -i ~/.ssh/opentree/opentree.pem opentree@ot$1'
+echo '}'
+echo 'alias sshot=ssh_to_ot'
