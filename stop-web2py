@@ -21,6 +21,7 @@ do
                 echo "Removing PID file..."
                 rm httpserver.pid
                 ps auxwww | grep web2py | grep python
+                exit 0
             else
                 echo "multiple attempts to kill the server running with with PID of" $(cat httpserver.pid) "failed."
                 echo 'The server has NOT been restarted!'

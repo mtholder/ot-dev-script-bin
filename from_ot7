@@ -1,0 +1,5 @@
+#!/bin/sh
+src="${1}"
+shift
+scp -i ~/.ssh/opentree/opentree.pem opentree@ot7:"${src}" $@
+

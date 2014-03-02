@@ -1,0 +1,3 @@
+#!/bin/sh
+ssh -i ~/.ssh/opentree/opentree.pem opentree@ot7
+
